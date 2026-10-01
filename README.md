@@ -1,2 +1,2 @@
 # aplikacje
-Sośnica Apteka [*]
+Łukasz nie kopiuj proszę z mojego github
