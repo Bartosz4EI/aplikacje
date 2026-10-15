@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       // KROK 1: Definicja funkcji
+      function wpuscNaImpreze(wiek){
+        if(wiek>=18){
+          document.write("Zapraszamy! Masz " + wiek + " lat<br>");
+        } else {
+          document.write("Niestety wstęp od 18 lat <br>")
+        }
+      }
     </script>
   </head>
   <body>
@@ -14,10 +21,13 @@
     <div id="wynik">
       <script>
         // KROK 2: Wywołania funkcji
+        wpuscNaImpreze(15);
+        wpuscNaImpreze(18);
+        wpuscNaImpreze(25);
       </script>
     </div>
     <footer>
-      <!-- Imię, nazwisko, klasa -->
+      <p>Bartosz Łabądź 4EI</p>
     </footer>
   </body>
 </html>
