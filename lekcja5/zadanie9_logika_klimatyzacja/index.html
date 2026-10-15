@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       // KROK 1: Definicja funkcji
+      function sterujKlimatyzacja(temperatura, czyWlaczona){
+        if(czyWlaczona==false){
+          document.write("Klimatyzacja nie działa <br>");
+        } else if(temperatura>30){
+          document.write("Chłodzenie na MAX! <br>");
+        } else if(temperatura>25){
+          document.write("Chłodzenie umiarkowane <br>");
+        } else {
+          document.write("Temperatura idealna, wiatrak wolny <br>");
+        }
+      }
     </script>
   </head>
   <body>
@@ -14,10 +25,13 @@
     <div id="wynik">
       <script>
         // KROK 2: Wywołania funkcji
+        sterujKlimatyzacja(35, true);
+        sterujKlimatyzacja(15, true);
+        sterujKlimatyzacja(40, false);
       </script>
     </div>
     <footer>
-      <!-- Imię, nazwisko, klasa -->
+      <p>Bartosz Łabądź 4EI</p>
     </footer>
   </body>
 </html>
