@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       // KROK 1: Definicja funkcji przeliczNaMetry
+      function przeliczNaMetry(km){
+        let metry = km * 1000;
+        return metry;
+      }
     </script>
   </head>
   <body>
@@ -14,10 +18,14 @@
     <div id="wynik">
       <script>
         // KROK 2: Użycie funkcji i wyświetlenie wyników
+        let wynik1= przeliczNaMetry(5);
+        let wynik2 = przeliczNaMetry(1.5);
+        document.write(wynik1 + "<br>");
+        document.write(wynik2 + "<br>");
       </script>
     </div>
     <footer>
-      <!-- Imię, nazwisko, klasa -->
+      <p>Bartosz Łabądź 4EI</p>
     </footer>
   </body>
 </html>
