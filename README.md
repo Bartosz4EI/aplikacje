@@ -1,2 +1,2 @@
 # aplikacje
-Łukasz nie kopiuj proszę z mojego github
+Wojtek nie kopiuj proszę z mojego github
