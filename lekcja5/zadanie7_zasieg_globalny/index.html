@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="style.css" />
     <script defer>
       // 1. Stwórz zmienną globalną liczbaProduktow = 0
+      let liczbaProduktow=0;
+      function wyprodukuj(){
+        liczbaProduktow++;
+        document.write("Wyprodukowano! Stan magazynu: " + liczbaProduktow + "! <br>");
+      }
 
       // 2. Zdefiniuj funkcję wyprodukuj(), która zwiększa tę zmienną
 
@@ -15,5 +20,13 @@
   <body>
     <h1>Zadanie 7: Zasięg Globalny</h1>
     <p>Symulacja fabryki.</p>
+    <script>
+      wyprodukuj();
+      wyprodukuj();
+      wyprodukuj();
+    </script>
   </body>
+  <footer>
+    <p>Bartosz Łabądź 4EI</p>
+  </footer>
 </html>
