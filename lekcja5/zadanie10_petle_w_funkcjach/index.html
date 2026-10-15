@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       // KROK 1: Definicja funkcji
+      function drukujLinie(ilosc){
+        for(i=0;i<ilosc;i++){
+          document.write("-");
+        }
+        document.write("<br>")
+      }
     </script>
   </head>
   <body>
@@ -14,10 +20,13 @@
     <div id="wynik">
       <script>
         // KROK 2: Wywołania funkcji
+        drukujLinie(10);
+        drukujLinie(50);
+        drukujLinie(5);
       </script>
     </div>
     <footer>
-      <!-- Imię, nazwisko, klasa -->
+      <p>Bartosz Łabądź 4EI</p>
     </footer>
   </body>
 </html>
