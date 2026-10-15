@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       // KROK 1: Definicja funkcji
+      function otworzSejf(){
+        let tajnykod=1234;
+        document.write("Kod w środku sejfu " + tajnykod);
+      }
     </script>
   </head>
   <body>
@@ -14,10 +18,12 @@
     <div id="wynik">
       <script>
         // KROK 2: Wywołanie funkcji i test błędu
+        otworzSejf();
+        document.write(tajnykod);
       </script>
     </div>
     <footer>
-      <!-- Imię, nazwisko, klasa -->
+      <p>Bartosz Łabądź 4EI</p>
     </footer>
   </body>
 </html>
