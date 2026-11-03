@@ -1,1 +1,1 @@
-Wojtek NIE kradnij z mojego github prosze, albo dostaniesz DDOS
+Wojtek, bitte klaue nichts von meinem GitHub, sonst gibt's 'ne DDoS-Attacke!
