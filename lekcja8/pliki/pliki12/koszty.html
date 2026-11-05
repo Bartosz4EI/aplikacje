@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaż paneli podłogowych</title>
+    <script>
+        function oblicz(){
+            let typ_panelu = document.querySelector('input[name=typ_panelu]:checked').value;
+            let dlugosc = Number(document.getElementById("dlugosc").value);
+            let szerokosc = Number(document.getElementById("szerokosc").value);
+            if (typ_panelu == null || dlugosc <= 0 || szerokosc <= 0){
+                document.getElementById("skrypt").textContent="Uzupełnij wszystkie pola";
+                return;
+            }
+            let PoleP= dlugosc*szerokosc;
+            const laminowane = 12;
+            const winylowe = 14;
+            const deska = 18;
+            let cena;
+            switch(typ_panelu){
+                case 'panele_laminowane':
+                    cena=PoleP*12;
+                    break;
+                case 'panele_winylowe':
+                    cena=PoleP*14;
+                    break;
+                case 'deska_podlogowa':
+                    cena=PoleP*18;
+                    break;
+            }
+            document.getElementById("skrypt").innerHTML="Pole powierzchni pomieszczenia: " + PoleP + ", koszt montażu " + cena;
+        
+        }   
+    </script>
+</head>
+<body>
+    <header>
+        <img src="montaz_paneli.png" alt="firma usługowa">
+    </header>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="koszty.html">Kalkulator Kosztów</a>
+    </nav>
+    <main>
+        <h1>Kalkulator kosztów montażu</h1>
+        <label for="szerokosc">Szerokość pomieszczenia [m] </label>
+        <input type="number" id="szerokosc" name="szerokosc"> 
+        <label for="dlugosc">Długość pomieszczenia [m] </label>
+        <input type="number" id="dlugosc" name="dlugosc"> 
+
+        <p>Typ panelu</p>
+        <input type="radio" id="panele_laminowane" value="panele_laminowane" name="typ_panelu">
+        <label for="panele_laminowane">Panele laminowane</label><br>
+        <input type="radio" id="panele_winylowe" value="panele_winylowe" name="typ_panelu">
+        <label for="panele_winylowe">Panele winylowe</label><br>
+        <input type="radio" id="deska_podlogowa" value="deska_podlogowa" name="typ_panelu">
+        <label for="deska_podlogowa">Deska podłogowa</label><br>
+        <button type="submit" onclick="oblicz()">Oblicz</button>
+        <p id="skrypt"> </p>
+    </main>
+    <footer>
+        <h5>Autor strony:Numer Zdającego</h5>
+    </footer>
+</body>
+</html>
